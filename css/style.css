@@ -156,7 +156,6 @@ body {
 }
 .hero-section {
   position: relative;
-  /* هذا هو سر احترافية التنسيق! نحن نخبر المتصفح: اجعل ارتفاع هذا القسم مساوياً لارتفاع الشاشة بالكامل (100vh) ناقصاً ارتفاع الهيدر (80px) الذي قمنا بتثبيته مسبقاً. هذا يمنع ظهور شريط تمرير (Scrollbar) غير مرغوب فيه. */
   height: calc(100vh - 80px);
   display: flex;
   align-items: center;
@@ -165,7 +164,6 @@ body {
   background-image: url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
-  /* هذا يجعل صورة الخلفية "ثابتة" أثناء التمرير، بينما يتحرك المحتوى فوقها. هذا التأثير يسمى Parallax Effect البسيط، وهو يعطي شعوراً بالفخامة والعمق. */
   background-attachment: fixed;
   z-index: 1;
 }
