@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طيف | للمأكولات العالمية الفاخرة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- لماذا كلاس main-header بدلاً من وسم header فقط؟
+استخدام كلاس خاص (main-header) يعطينا "هوية" محددة، -->
+    <header class="main-header">
+        <!-- نستخدم div ليحتوي الشعار، وداخل الـ div نضع كلمة "طيف" والـ span لكلمة "Taif". الـ span عنصر "مضمن" (inline) لا يكسر السطر، ويسمح لنا بتنسيق كلمة "Taif" بخط وحجم ولون مختلفين تماماً عن كلمة "طيف" داخل نفس السطر. -->
+        <div class="logo">طيف  <span>Taif</span></div>
+<!-- نحن نستخدم الـ checkbox لإنشاء "مفتاح تبديل" (Toggle) بدون الحاجة لـ JavaScript. عند الضغط على الـ label المرتبط بالـ checkbox (عن طريق for="menu-toggle" وبنفس الـ id)، يقوم المتصفح بتغيير حالة الـ checkbox تلقائياً بين checked و unchecked، ونحن نستغل هذه الحالة في CSS لنفتح ونغلق القائمة. -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox"> 
+
+           <label for="menu-toggle" class="hamburger">
+            <!-- نحتاج لثلاثة خطوط لصناعة أيقونة القائمة (الهامبرغر). كل span يمثل خطاً واحداً. عند التنشيط، نستخدم transform لتحويل الخطوط إلى شكل علامة (X). -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+ <nav class="nav-links">
+            <a href="#hero">الرئيسية</a>
+            <a href="#menu">القائمة العالمية</a>
+            <a href="#booking">حجز طاولة</a>
+        </nav>
+
+
+
+    </header>
+
+
+
+
+
+
+     <main class="main-content">
+
+        
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="subtitle">تجربة تذوق استثنائية</h2>
+                <h1 class="title">فن الطهي الحديث</h1>
+                <p>مزيج ساحر بين المكونات الطازجة والإبداع اللامحدود.</p>
+                <a href="#menu" class="btn-liquid">اكتشف أطباقنا</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <aside class="promo-widget">
+       
+            <div class="promo-slider">
+                <div class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=300&q=80" alt="عرض 1">
+                    <div class="promo-details">
+                        <h4>مشاوي مشكلة</h4>
+                        <div class="promo-price">
+                            
+                            <del>45$</del> 
+                            <span>30$</span></div>
+                    </div>
+                </div>
+                <div class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="عرض 2">
+                    <div class="promo-details">
+                        <h4>برجر واغيو فاخر</h4>
+                        <div class="promo-price"><del>25$</del> <span>18$</span></div>
+                    </div>
+                </div>
+                <div class="promo-slide">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=300&q=80" alt="عرض 3">
+                    <div class="promo-details">
+                        <h4>بيتزا الكمأة</h4>
+                        <div class="promo-price"><del>35$</del> <span>25$</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-tag">🔥 عروض حصرية</div>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+         <section id="menu" class="menu-section">
+            <div class="section-header">
+                <h2>أطباق الشيف المميزة</h2>
+                <p>اخترنا لكم أشهى الأطباق المحضرة بعناية فائقة</p>
+            </div>
+            <div class="grid-container">
+
+                <!-- <article> (Semantic Tag): استخدمنا وسم <article> بدلاً من div. هذا الوسم دلالي ويخبر محركات البحث أن كل بطاقة طعام هي "محتوى مستقل ومكتمل" (أي أن كلاً منها يمثل وصفاً لمنتج). -->
+
+                <article class="food-card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="ستيك">
+                    </div>
+                    <div class="card-info">
+                        <h3>ستيك توماهوك الفاخر</h3>
+                        <p>لحم بقر واغيو مع زبدة الكمأة.</p>
+                        <span class="price">120$</span>
+                    </div>
+                </article>
+                <article class="food-card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=500&q=80" alt="سالمون"></div>
+                    <div class="card-info">
+                        <h3>سالمون الترياكي</h3>
+                        <p>فيليه السالمون النرويجي الطازج.</p>
+                        <span class="price">85$</span>
+                    </div>
+                </article>
+                <article class="food-card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80" alt="بيتزا"></div>
+                    <div class="card-info">
+                        <h3>بيتزا الكمأة الإيطالية</h3>
+                        <p>عجينة هشة مخبوزة على الحطب.</p>
+                        <span class="price">45$</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+
+
+         <section class="video-section">
+            <div class="section-header">
+                <h2>أجواء مطعم طيف</h2>
+            </div>
+            <div class="video-container">
+                <video src="" controls poster="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"></video>
+            </div>
+        </section>
+
+
+
+
+            <section id="booking" class="booking-section">
+            <div class="form-container">
+                <h2>احجز طاولتك الآن</h2>
+                <form class="master-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">الاسم الكريم</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="phone" required placeholder=" ">
+                            <label for="phone">رقم التواصل</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group"><input type="date" id="date" required></div>
+                        <div class="input-group">
+                            <select id="guests" required>
+                                <option value="" disabled selected>عدد الضيوف</option>
+                                <option value="2">شخصين</option>
+                                <option value="4">عائلة (4 أشخاص)</option>
+                                <option value="6">مجموعة كبيرة</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-liquid">تأكيد الحجز</button>
+                </form>
+            </div>
+        </section>
+
+
+<!-- <iframe> (Inline Frame): هو وسيلة لعرض صفحة ويب داخل صفحة ويب أخرى. نحن هنا نقوم "بضم" خريطة جوجل داخل موقعنا. -->
+                <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115989.10260273766!2d46.604753!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1700000000000!5m2!1sar!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+     </main>
+
+        <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">طـيـف <span>Taif</span></div>
+                <p class="footer-desc">نقدم لكم تجربة تذوق فاخرة تجمع بين الأصالة والابتكار في عالم الطهي، لتصنع ذكريات لا تُنسى.</p>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <ul class="contact-info">
+                    <li>📍 الرياض، المملكة العربية السعودية</li>
+                    <li>📞 +966 50 123 4567</li>
+                    <li>✉️ info@taif-restaurant.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تابعنا على</h3>
+                <div class="social-links">
+                    <a href="#">📘 فيسبوك</a>
+                    <a href="#">📸 إنستغرام</a>
+                    <a href="#">🐦 تويتر</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 مطعم طيف العالمي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
