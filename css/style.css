@@ -512,7 +512,6 @@ minmax(300px, 1fr): "اجعل أقل عرض للبطاقة 300 بكسل، وإذ
   width: 100%;
   padding: 1rem 0;
   background: transparent;
-  /* "نحن نحذف الإطار التقليدي القبيح ونضع خطاً سفلياً فقط، مما يعطي تصميماً أكثر بساطة وفخامة." */
   border: none;
   border-bottom: 1px solid var(--text-muted);
   color: var(--text-main);
