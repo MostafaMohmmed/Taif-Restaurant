@@ -10,16 +10,11 @@
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- لماذا كلاس main-header بدلاً من وسم header فقط؟
-استخدام كلاس خاص (main-header) يعطينا "هوية" محددة، -->
     <header class="main-header">
-        <!-- نستخدم div ليحتوي الشعار، وداخل الـ div نضع كلمة "طيف" والـ span لكلمة "Taif". الـ span عنصر "مضمن" (inline) لا يكسر السطر، ويسمح لنا بتنسيق كلمة "Taif" بخط وحجم ولون مختلفين تماماً عن كلمة "طيف" داخل نفس السطر. -->
         <div class="logo">طيف  <span>Taif</span></div>
-<!-- نحن نستخدم الـ checkbox لإنشاء "مفتاح تبديل" (Toggle) بدون الحاجة لـ JavaScript. عند الضغط على الـ label المرتبط بالـ checkbox (عن طريق for="menu-toggle" وبنفس الـ id)، يقوم المتصفح بتغيير حالة الـ checkbox تلقائياً بين checked و unchecked، ونحن نستغل هذه الحالة في CSS لنفتح ونغلق القائمة. -->
         <input type="checkbox" id="menu-toggle" class="menu-checkbox"> 
 
            <label for="menu-toggle" class="hamburger">
-            <!-- نحتاج لثلاثة خطوط لصناعة أيقونة القائمة (الهامبرغر). كل span يمثل خطاً واحداً. عند التنشيط، نستخدم transform لتحويل الخطوط إلى شكل علامة (X). -->
             <span></span>
             <span></span>
             <span></span>
@@ -119,7 +114,6 @@
             </div>
             <div class="grid-container">
 
-                <!-- <article> (Semantic Tag): استخدمنا وسم <article> بدلاً من div. هذا الوسم دلالي ويخبر محركات البحث أن كل بطاقة طعام هي "محتوى مستقل ومكتمل" (أي أن كلاً منها يمثل وصفاً لمنتج). -->
 
                 <article class="food-card">
                     <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="ستيك">
@@ -196,7 +190,6 @@
         </section>
 
 
-<!-- <iframe> (Inline Frame): هو وسيلة لعرض صفحة ويب داخل صفحة ويب أخرى. نحن هنا نقوم "بضم" خريطة جوجل داخل موقعنا. -->
                 <section class="map-section">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115989.10260273766!2d46.604753!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1700000000000!5m2!1sar!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
