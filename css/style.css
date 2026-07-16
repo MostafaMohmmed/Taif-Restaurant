@@ -15,9 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* 2. Keyframes */
 
-/* fadeInUp: هذه الحركة تجعل المحتوى يبدو وكأنه "يظهر من الأسفل للأعلى" عند تحميل الصفحة. هو animation من opacity: 0 إلى 1 مع تغيير translateY. */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -28,7 +26,6 @@
     transform: translateY(0);
   }
 }
-/* pulseBorder: هذه حركة "النبض". هي تكرار لا نهائي (infinite) لـ box-shadow؛ حيث يكبر الظل ويصغر حول الزر، مما يجذب عين المستخدم للنقر عليه. */
 @keyframes pulseBorder {
   0% {
     box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
@@ -90,10 +87,8 @@ body {
   font-size: 1.8rem;
   color: var(--primary-gold);
   display: flex;
-  /* جعلنا العناصر داخل الشعار تترتب عمودياً (كلمة فوق كلمة). */
   flex-direction: column;
   align-items: center;
-  /* للتخلص من أي مسافات إضافية بين السطور لتبدو الكلمتان متلاصقتين بشكل احترافي. */
   line-height: 1;
 }
 .logo span {
@@ -110,12 +105,10 @@ body {
   color: var(--text-main);
   text-decoration: none;
   font-weight: 700;
-  /* ضرورية جداً لنتمكن من وضع خط الـ ::after (الذي هو absolute) بالنسبة للرابط نفسه. */
   position: relative;
   padding-bottom: 5px;
   transition: 0.4s;
 }
-/* عمل خط عند التاشير على النافبار  بمواصفات معينة */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -228,7 +221,6 @@ body {
   transition: 0.4s;
   animation: pulseBorder 3s infinite;
 }
-/* تخيل أن ::before هو "مربع ذهبي" نضعه خارج الزر بالكامل على جهة اليسار (left: -100%). */
 .btn-liquid::before {
   content: "";
   position: absolute;
@@ -237,7 +229,6 @@ body {
   width: 100%;
   height: 100%;
   background: var(--primary-gold);
-  /* z-index: -1: تضع هذه الطبقة خلف المحتوى (hero-content) ولكن فوق الصورة، مما يجعل النصوص تبرز بوضوح عالٍ. */
   z-index: -1;
   transition: 0.4s;
 }
@@ -268,7 +259,6 @@ body {
 
 /* 4. صندوق الإعلانات المتطور (Promo Widget) */
 
-/* هذه هي "التريكة" الاحترافية لجعل العنصر في منتصف الشاشة طولياً مهما تغير حجم المتصفح. الـ translateY(-50%) تسحب العنصر للأعلى بمقدار نصف طوله، ليصبح "المركز الهندسي" للعنصر هو منتصف الشاشة. */
 .promo-widget {
   position: fixed;
   top: 50%;
@@ -512,7 +502,6 @@ minmax(300px, 1fr): "اجعل أقل عرض للبطاقة 300 بكسل، وإذ
   width: 100%;
   padding: 1rem 0;
   background: transparent;
-  /* "نحن نحذف الإطار التقليدي القبيح ونضع خطاً سفلياً فقط، مما يعطي تصميماً أكثر بساطة وفخامة." */
   border: none;
   border-bottom: 1px solid var(--text-muted);
   color: var(--text-main);
